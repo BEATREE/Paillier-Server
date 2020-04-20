@@ -1,0 +1,21 @@
+# Paillier配置文件
+server:
+  port: 8089
+
+# 日志打印
+logging:
+  pattern:
+    console: '%p%m%n'
+  level:
+    root: warn
+    cn.beatree.anonvote: trace
+
+# 跨域允许列表
+cros:
+  allowedOrigins:
+    - anonvote.beatree.cn
+
+# Paillier加密算法所用密钥p,q
+paillier:
+  p: 113943930770127596103200232713622420042426795429522022291404701141036586050221
+  q: 77531341662671614131788857602312284676978649685592742602104436967018426968107
