@@ -17,11 +17,11 @@ public class CrosConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/paillier/**")
+        registry.addMapping("/**")
                 .allowedOrigins(crosParams.getAllowedOrigins())
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowCredentials(true)
                 .maxAge(3600)
-                .allowedHeaders(crosParams.getAllowedOrigins());
+                .allowedHeaders("*");
     }
 }

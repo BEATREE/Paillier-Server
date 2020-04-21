@@ -32,7 +32,7 @@ public class Encode {
 
         returnObject.setStatus(1);
         returnObject.setMessage("加密成功");
-        returnObject.setData(encryption);
+        returnObject.setData(encryption.toString());
 
         return returnObject;
     }
@@ -47,11 +47,11 @@ public class Encode {
 
         // 获取长度，定义存放加密数据的数组
         int arrLength = toEncode.getNumbers().length;
-        BigInteger[] encryption = new BigInteger[arrLength];
+        String[] encryption = new String[arrLength];
 
         for(int i = 0; i < arrLength; i++){
             // 循环进行加密
-            encryption[i] = paillier.encryption(toEncode.getNumbers()[i]);
+            encryption[i] = paillier.encryption(toEncode.getNumbers()[i]).toString();
         }
 
         log.info(LocalDateTime.now().toString() + "数字数组加密成功");

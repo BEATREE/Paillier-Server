@@ -29,6 +29,9 @@ class PaillierApplicationTests {
 
     @Test
     void getN_square(){
+        paillier.init();
+
         paillier.encryption(new BigInteger("1"));
+
     }
 }

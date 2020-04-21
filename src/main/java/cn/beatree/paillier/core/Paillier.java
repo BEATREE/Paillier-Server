@@ -64,6 +64,7 @@ public class Paillier {
         n = p.multiply(q);
         // 初始化n_square的值
         n_square = n.multiply(n);
+//        System.out.println("nsquare =====" + n_square.toString());
         lambda = p.subtract(BigInteger.ONE).multiply(q.subtract(BigInteger.ONE))
                 .divide(p.subtract(BigInteger.ONE).gcd(q.subtract(BigInteger.ONE)));
 

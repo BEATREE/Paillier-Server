@@ -1,8 +1,8 @@
-# PaillierÅäÖÃÎÄ¼ş
+# Paillieré¡¹ç›®ç«¯å£å·
 server:
   port: 8089
 
-# ÈÕÖ¾´òÓ¡
+# æ—¥å¿—æ‰“å°
 logging:
   pattern:
     console: '%p%m%n'
@@ -10,12 +10,12 @@ logging:
     root: warn
     cn.beatree.anonvote: trace
 
-# ¿çÓòÔÊĞíÁĞ±í
+# å…è®¸çš„è·¨åŸŸæ•°ç»„
 cros:
   allowedOrigins:
-    - anonvote.beatree.cn
+    - "*"
 
-# Paillier¼ÓÃÜËã·¨ËùÓÃÃÜÔ¿p,q
+# Paillierå¯†é’¥
 paillier:
   p: 113943930770127596103200232713622420042426795429522022291404701141036586050221
   q: 77531341662671614131788857602312284676978649685592742602104436967018426968107
